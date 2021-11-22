@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.5)
+project(callingFortran)
+enable_language(Fortran)
+set(fsources integral.f90)
+set(sources test.c)
+add_executable(${PROJECT_NAME} ${fsources} ${sources})
